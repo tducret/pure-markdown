@@ -1,0 +1,98 @@
+<script src="script.js"></script>
+
+# This page is pure Markdown
+
+Traditional markdown-based static sites typically require pre-processing steps to convert markdown into HTML before hosting.
+
+With this solution, **you can host the raw markdown files** while the browser handles the conversion dynamically.
+
+
+## Proof
+
+Right-click on this page, and click on `View page source` (or press `[Cmd+U]`).
+
+You can also render it in your terminal with [glow](https://github.com/charmbracelet/glow) :
+
+```sh
+# brew install glow
+# or check https://github.com/charmbracelet/glow#installation
+
+curl -s https://thispage.com | glow -p
+```
+
+## Usage
+
+1. **Write in Markdown**: Create a page/blog post using Markdown syntax.
+2. **Add the script at the top**: Just add `&lt;script src="script.js">&lt;/script>` at the top of the page. It will take care of the conversion into HTML.
+2. **Host it**: Save your file with the `.html` suffix and host it as a static file.
+
+### Example Page
+
+```html
+&lt;script src="script.js">&lt;/script>
+
+# My Page
+
+This page is being converted from **Markdown** to **HTML** on the fly.
+
+```
+
+## Capabilities
+
+### Emphasis
+
+It supports *italic*, **bold** and ~~strikethrough~~.
+
+### Lists
+
+1. First level
+   1. Very
+   2. Cool
+   7. Numerotation
+2. Second level
+   - Without 
+     - Numbers
+
+### Horizontal rule
+
+---
+
+### Table
+
+| Left Align (default) | Center Align | Right Align |
+| :------------------- | :----------: | ----------: |
+| A                    | A            | A           |
+| B                    | B            | B           |
+| C                    | C            | C           |
+
+
+### Code
+
+Both `inline code` and code blocks :
+```js
+console.log('Hello, World!');
+```
+
+### Images
+
+![Markdown logo](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMjA4IDEyOCI+PHJlY3Qgd2lkdGg9IjE5OCIgaGVpZ2h0PSIxMTgiIHg9IjUiIHk9IjUiIHJ5PSIxMCIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjEwIiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTMwIDk4VjMwaDIwbDIwIDI1IDIwLTI1aDIwdjY4SDkwVjU5TDcwIDg0IDUwIDU5djM5em0xMjUgMGwtMzAtMzNoMjBWMzBoMjB2MzVoMjB6Ii8+PC9zdmc+)
+
+
+### Links
+
+- [My LinkedIn Profile](https://www.linkedin.com/in/thibaultducret)
+- [My GitHub Page](https://github.com/tducret)
+
+---
+
+## Limitations
+
+- HTML tags can't be written directly : use `&amp;lt;` instead of `&lt;`
+- Footnotes are not supported (as they are not supported by the marked.js library)
+- Headers do not generate anchor links
+
+## References
+
+- The Markdown conversion to HTML is performed with [marked.js](https://marked.js.org/)
+- The CSS styling is a simplified version of the excellent [bearblog.dev](https://bearblog.dev/)
+- [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
