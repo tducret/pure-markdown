@@ -79,13 +79,11 @@ table {
     width: 100%;
 }
 
-hr {
-    border: 0;
-    border-top: 1px dashed;
-}
-
 img {
-    max-width: 100%;
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 code,
