@@ -2,14 +2,32 @@
 
 # This page is pure Markdown
 
+![Diamond](diamond.svg)
+
+It is hosted as a `.html` file, but it is written in pure Markdown.
+
 Traditional markdown-based static sites typically require pre-processing steps to convert markdown into HTML before hosting.
 
 With this solution, **you can host the raw markdown files** while the browser handles the conversion dynamically.
 
+## 🔧 Usage
 
-## Proof
+1. **Write your page in Markdown**
+2. **Add this script at the top** (or host [the script](https://github.com/tducret/pure-markdown/blob/main/script.js) yourself)
 
-Right-click on this page, and click on `View page source` (or press `[Cmd+U]`).
+```html
+&lt;script src="https://cdn.jsdelivr.net/gh/tducret/pure-markdown@main/script.js">&lt;/script>
+
+# Your Page
+
+Using Markdown.
+```
+
+3. **Host your file with the `.html` suffix**
+
+## 🕵️ Proof
+
+Right-click on this page, and click on `View page source`.
 
 You can also render it in your terminal with [glow](https://github.com/charmbracelet/glow) :
 
@@ -20,24 +38,7 @@ You can also render it in your terminal with [glow](https://github.com/charmbrac
 curl -s https://thispage.com | glow -p
 ```
 
-## Usage
-
-1. **Write in Markdown**: Create a page/blog post using Markdown syntax.
-2. **Add the script at the top**: Just add `&lt;script src="script.js">&lt;/script>` at the top of the page. It will take care of the conversion into HTML.
-2. **Host it**: Save your file with the `.html` suffix and host it as a static file.
-
-### Example Page
-
-```html
-&lt;script src="script.js">&lt;/script>
-
-# My Page
-
-This page is being converted from **Markdown** to **HTML** on the fly.
-
-```
-
-## Capabilities
+## 🃏 Capabilities
 
 ### Emphasis
 
@@ -85,14 +86,15 @@ console.log('Hello, World!');
 
 ---
 
-## Limitations
+## 😔 Limitations
 
-- HTML tags can't be written directly : use `&amp;lt;` instead of `&lt;`
+- HTML tags can't be written directly in your Markdown page. Use `&amp;lt;` instead of `&lt;`
 - Footnotes are not supported (as they are not supported by the marked.js library)
 - Headers do not generate anchor links
 
-## References
+## 📚 References
 
+- [Github repository](https://github.com/tducret/pure-markdown)
 - The Markdown conversion to HTML is performed with [marked.js](https://marked.js.org/)
 - The CSS styling is a simplified version of the excellent [bearblog.dev](https://bearblog.dev/)
 - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)

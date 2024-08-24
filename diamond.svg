@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250px" height="215px" viewBox="0 0 250 215" version="1.1">
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(2.352941%,43.137255%,68.235294%);fill-opacity:1;" d="M 248.238281 65.476562 L 125 213.246094 L 177.96875 79.757812 Z M 248.238281 65.476562 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(52.54902%,71.764706%,84.705882%);fill-opacity:1;" d="M 248.238281 65.476562 L 177.96875 79.757812 L 159.277344 1.777344 L 184.210938 1.777344 Z M 248.238281 65.476562 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(76.470588%,86.27451%,92.54902%);fill-opacity:1;" d="M 125 213.246094 L 1.769531 65.488281 L 1.761719 65.476562 L 1.773438 65.480469 L 72.03125 79.757812 Z M 125 213.246094 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(76.470588%,86.27451%,92.54902%);fill-opacity:1;" d="M 177.96875 79.757812 L 72.03125 79.757812 L 90.722656 1.777344 L 159.277344 1.777344 Z M 177.96875 79.757812 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(52.54902%,71.764706%,84.705882%);fill-opacity:1;" d="M 177.96875 79.757812 L 125 213.246094 L 72.03125 79.757812 Z M 177.96875 79.757812 "/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(2.352941%,43.137255%,68.235294%);stroke-opacity:1;stroke-miterlimit:10;" d="M 452.347656 5.042696 L 257.652344 5.042696 L 204.56875 226.289608 L 5.036563 185.781795 L 186.852031 5.020531 Z M 452.347656 5.042696 " transform="matrix(0.352113,0,0,0.352459,0,0)"/>
+<path style="fill:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(2.352941%,43.137255%,68.235294%);stroke-opacity:1;stroke-miterlimit:10;" d="M 186.852031 5.020531 L 5.003281 185.770712 L 5.025469 185.803961 L 355 605.023801 L 704.996719 185.770712 L 523.159063 5.042696 L 452.347656 5.042696 " transform="matrix(0.352113,0,0,0.352459,0,0)"/>
+</g>
+</svg>
