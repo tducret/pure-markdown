@@ -1,1 +1,1 @@
-# Check out the [Demo page](https://tducret.com/pure-markdown)
+# Check out the [Demo page](https://pure-markdown.netlify.app/)
